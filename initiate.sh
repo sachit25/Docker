@@ -12,11 +12,11 @@ sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenk
 sudo apt update
 sudo apt install jenkins
 sudo systemctl start jenkins.service
-sudo systemctl status jenkins
+#sudo systemctl status jenkins
 sudo ufw allow 8080
 sudo ufw allow OpenSSH
 sudo ufw enable
-sudo ufw status
+#sudo ufw status
 #sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 mkdir product360
 sudo apt-get install git
