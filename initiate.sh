@@ -31,14 +31,16 @@ sudo apt update
 #--------git is pre-installed in ubuntu ------------------------
 # sudo apt-get install git
 #------------------------------------------------------
-#---------------------------give sudo permission to docker user------------------------------
-sudo groupadd docker
-sudo usermod -aG docker $USER
-su - ${USER}
+#---------------- sudo permission to docker user------------------------------
+#-------------------------------------manual commands------------------------------------------
+#sudo groupadd docker
+#sudo su
+#usermod -a -G sudo docker
 #-----------------------------------------------
 # sudo permission to jenkins user----------------------------------
-sudo usermod -aG jenkins $USER
-su - ${USER}
+#sudo su
+#usermod -a -G sudo jenkins
+
 #-------------------------------------------------------------------
 #sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
